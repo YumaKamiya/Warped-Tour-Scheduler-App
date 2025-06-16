@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { View } from '../types';
 import CalendarDaysIcon from './icons/CalendarDaysIcon';
@@ -22,7 +21,7 @@ const BottomNavigation: React.FC<BottomNavigationProps> = ({ currentView, onSetV
           <button
             key={item.view}
             onClick={() => onSetView(item.view)}
-            className={`flex flex-col items-center justify-center w-full py-2 px-1 text-xs sm:text-sm focus:outline-none transition-colors duration-150
+            className={`flex flex-col items-center justify-center w-full py-1 px-1 text-xs sm:text-sm focus:outline-none transition-colors duration-150
               ${
                 currentView === item.view
                   ? 'text-blue-600'

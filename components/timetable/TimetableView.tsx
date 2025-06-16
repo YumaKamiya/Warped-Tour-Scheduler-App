@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { Artist, Day } from '../../types';
 import { DAYS, STAGES, TIME_LABELS, TOTAL_TIMETABLE_HEIGHT, TIME_SLOT_HEIGHT_PER_MINUTE, TIME_SLOTS_START_HOUR } from '../../constants';
@@ -39,16 +38,16 @@ const TimetableView: React.FC<TimetableViewProps> = ({ artists, onSelectArtist }
           selectedValue={watchFilter}
           onSelect={(value: WatchFilterType) => setWatchFilter(value)}
           className="mb-2 justify-center" // Reduced margin-bottom
-          tabClassName="py-1.5 sm:py-2 text-xs sm:text-sm" // Reduced padding
-          activeTabClassName="py-1.5 sm:py-2 text-xs sm:text-sm"
+          tabClassName="py-0.5 text-xs" // Reduced padding and fixed text size
+          activeTabClassName="py-0.5 text-xs" // Reduced padding and fixed text size
         />
         <Tabs
             options={dayTabs}
             selectedValue={selectedDay}
             onSelect={(dayValue: Day) => setSelectedDay(dayValue)}
             className="justify-center"
-            tabClassName="py-1.5 sm:py-2 text-xs sm:text-sm" // Reduced padding
-            activeTabClassName="py-1.5 sm:py-2 text-xs sm:text-sm"
+            tabClassName="py-0.5 text-xs" // Reduced padding and fixed text size
+            activeTabClassName="py-0.5 text-xs" // Reduced padding and fixed text size
         />
       </div>
 
