@@ -7,7 +7,7 @@ export const DAYS: Day[] = [Day.Day1, Day.Day2];
 export const STAGES: StageId[] = [1, 2, 3, 4, 5, 6];
 export const WANT_LEVELS: WantLevel[] = [1, 2, 3, 4, 5];
 
-export const TIME_SLOTS_START_HOUR = 10; // 10:00
+export const TIME_SLOTS_START_HOUR = 9; // Changed from 10 to 9
 export const TIME_SLOTS_END_HOUR = 23;   // 23:00
 export const TIME_SLOT_HEIGHT_PER_MINUTE = 2; // px: increased for better mobile tap targets
 
@@ -55,6 +55,17 @@ export const INITIAL_ARTISTS: Artist[] = [
     stage: 4,
     startTime: "16:00",
     endTime: "16:45",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Early Bird Special",
+    wantLevel: 3,
+    watch: false,
+    memo: "Check them out if I arrive early.",
+    day: Day.Day1,
+    stage: 5,
+    startTime: "09:30",
+    endTime: "10:15",
   },
 ];
 

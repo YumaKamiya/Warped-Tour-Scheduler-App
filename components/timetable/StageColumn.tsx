@@ -17,9 +17,9 @@ const StageColumn: React.FC<StageColumnProps> = ({ stageId, artists, onSelectArt
   );
 
   return (
-    <div className="flex-shrink-0 w-40 sm:w-48 h-full border-r border-slate-200 relative bg-white">
+    <div className="flex-shrink-0 w-32 sm:w-40 h-full border-r border-slate-200 relative bg-white"> {/* Reduced width from w-40 sm:w-48 */}
       {/* Stage Name Header - Sticky */}
-      <div className="sticky top-0 z-10 h-10 flex items-center justify-center border-b border-slate-200 bg-slate-50 shadow-sm">
+      <div className="sticky top-0 z-10 h-10 flex items-center justify-center border-b border-slate-200 bg-slate-100 shadow-sm"> {/* Ensure background for sticky header */}
         <h4 className="text-sm font-semibold text-blue-600">Stage {stageId}</h4>
       </div>
       
