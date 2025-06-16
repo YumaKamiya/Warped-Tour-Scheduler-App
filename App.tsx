@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback, useEffect } from 'react';
 import { Artist, View } from './types';
 import { INITIAL_ARTISTS, APP_TITLE } from './constants';
@@ -79,8 +78,8 @@ const App: React.FC = () => {
 
   return (
     <div className="flex flex-col h-screen max-h-screen font-sans bg-slate-50 text-slate-800">
-      <header className="bg-white shadow-sm p-4 text-center sticky top-0 z-30 border-b border-slate-200">
-        <h1 className="text-xl sm:text-2xl font-bold text-blue-600">{APP_TITLE}</h1>
+      <header className="bg-white shadow-sm py-2 text-center sticky top-0 z-30 border-b border-slate-200">
+        <h1 className="text-lg sm:text-xl font-bold text-blue-600">{APP_TITLE}</h1>
       </header>
 
       <main className="flex-grow overflow-y-auto pb-16"> {/* pb-16 for bottom nav */}
