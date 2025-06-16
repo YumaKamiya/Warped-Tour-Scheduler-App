@@ -1,0 +1,6 @@
+{
+  "name": "Warped Tour Scheduler",
+  "description": "A web application to help users schedule and manage artists they want to see at the Warped Tour music festival. Users can view artists by day and stage in a timetable view, or browse a filterable and sortable list of all artists. Artist details including name, want-to-see level, watch status, and performance times can be added and edited.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
